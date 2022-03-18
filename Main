@@ -1,0 +1,13 @@
+-- main libaries/dlls
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Ryou", "Midnight")
+
+
+local Win = Window:NewTab("Auto")
+local Section = Win:NewSection("Auto Clicker")
+
+Section:NewButton("AutoClicker", "What do you think it is", function()
+    while wait() do
+    print("Clicked")
+    end
+end)
